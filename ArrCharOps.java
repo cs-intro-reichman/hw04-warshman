@@ -110,8 +110,6 @@ public class ArrCharOps {
 
         for (int i = beginIndex; i < endIndex; i++) {
             newlist[j] = arr[i];
-            System.out.println(i);
-            System.out.println(j);
             j++;
             
         }

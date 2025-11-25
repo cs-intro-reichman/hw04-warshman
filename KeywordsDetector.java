@@ -39,7 +39,7 @@ public class KeywordsDetector {
             // Check if keyword[i] is in sentence:
             // check for every substring starting for i to (i+length-1) of keyword in the sentence. Make sure to increment i
             // keep going as long as i + keyword.length()  <= sentence.length
-            String keyword = keywords[i];
+            String keyword = keywords[i].toLowerCase();
             int keywordLen = keyword.length();
             for (int j = 0; j < sentence.length() - keywordLen; j++) {
                 if (sentence.substring(j, j + keywordLen).equals(keyword)) {
