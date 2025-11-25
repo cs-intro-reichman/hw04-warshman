@@ -179,7 +179,9 @@ public class ArrCharOps {
             } 
         }
 
-        if (len1 > len2) {
+        if (len2 == 0) {
+            return 0;
+        } else if (len1 > len2) {
             return 1;
         } else if (len1 < len2) {
             return -1;
