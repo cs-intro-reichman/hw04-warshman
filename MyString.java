@@ -42,7 +42,7 @@ public class MyString {
 
         //check for every substring from i to len2-i in str1 if there exists str[j]. if there exists return true
         for (int i = 0; i < len1 - len2 + 1; i++) {
-            if (str1.substring(i, i + len2).toLowerCase().equals(str2.toLowerCase())) {
+            if (str1.substring(i, i + len2).equals(str2)) {
                 return true;
             }
         }
