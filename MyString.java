@@ -40,17 +40,13 @@ public class MyString {
             return false;
         }
 
-        for (int i = 0; i < len2; i++) {
-            int counter = 0;
-            for (int j = 0; j < len1; j++) {
-                if (str2.toLowerCase().charAt(i) == str1.toLowerCase().charAt(j)) {
-                    counter++;
-                }
-            }
-            if (counter == 0) {
-                return false;
+        //check for every substring from i to len2-i in str1 if there exists str[j]. if there exists return true
+        for (int i = 0; i < len1 - len2 + 1; i++) {
+            if (str1.substring(i, i + len2).toLowerCase().equals(str2.toLowerCase())) {
+                return true;
             }
         }
-        return true;
-    }
+        
+        return false;
+}
 }
