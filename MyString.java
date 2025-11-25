@@ -43,7 +43,7 @@ public class MyString {
         for (int i = 0; i < len2; i++) {
             int counter = 0;
             for (int j = 0; j < len1; j++) {
-                if (str2.charAt(i) == str1.charAt(j)) {
+                if (str2.toLowerCase().charAt(i) == str1.toLowerCase().charAt(j)) {
                     counter++;
                 }
             }
